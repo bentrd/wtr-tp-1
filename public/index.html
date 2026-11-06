@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Suivi de commande · TP Web temps réel</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="repere">Web temps réel · TP 1</p>
+      <h1>Suivi de commande</h1>
+    </header>
+
+    <form action="/" method="get">
+      <label for="numero">Numéro de commande</label>
+      <div class="champs">
+        <input id="numero" name="order" type="number" min="1" max="9007199254740991"
+          step="1" inputmode="numeric" placeholder="1" required>
+        <button>Suivre</button>
+      </div>
+    </form>
+
+    <p id="connexion" role="status">Saisissez le numéro de votre commande.</p>
+
+    <section id="fiche" aria-labelledby="titre-commande" hidden>
+      <h2 id="titre-commande"></h2>
+      <p id="statut-commande" class="badge" role="status"></p>
+      <dl>
+        <div>
+          <dt>Quantité</dt>
+          <dd id="quantite"></dd>
+        </div>
+        <div>
+          <dt>Passée le</dt>
+          <dd><time id="date-commande"></time></dd>
+        </div>
+      </dl>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,85 @@
+:root {
+  color: #192a32;
+  background: #f4f7f6;
+  font: 1rem/1.5 system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body { margin: 0; }
+
+main {
+  width: min(100% - 2rem, 36rem);
+  margin: clamp(2rem, 8vw, 5rem) auto;
+}
+
+h1, h2, p, dl, dd { margin: 0; }
+
+h1 { font-size: clamp(1.9rem, 6vw, 2.6rem); }
+
+h2 { font-size: 1.2rem; }
+
+.repere, dt, #connexion { color: #465a60; }
+
+.repere {
+  font-size: .85rem;
+  font-weight: 650;
+}
+
+form, section {
+  padding: 1.25rem;
+  border: 1px solid #d8e2de;
+  border-radius: .65rem;
+  background: #fff;
+}
+
+form { margin-top: 1.5rem; }
+
+label { font-weight: 650; }
+
+.champs {
+  display: flex;
+  gap: .5rem;
+  margin-top: .5rem;
+}
+
+input, button {
+  font: inherit;
+  padding: .5rem .75rem;
+  border: 1px solid #718280;
+  border-radius: .35rem;
+}
+
+input { width: 100%; min-width: 0; }
+
+button {
+  color: #fff;
+  background: #175c51;
+  border-color: #175c51;
+  cursor: pointer;
+}
+
+:focus-visible { outline: 3px solid #247d6f; outline-offset: 2px; }
+
+#connexion { margin: .75rem 0; }
+
+.badge {
+  display: inline-block;
+  margin: .5rem 0 1rem;
+  padding: .25rem .65rem;
+  border-radius: .35rem;
+  background: #edf0f1;
+  font-weight: 650;
+}
+
+.badge[data-statut="shipped"] { background: #e2eefb; color: #1d4975; }
+.badge[data-statut="delivered"] { background: #e0f3ea; color: #195a3f; }
+.badge[data-statut="cancelled"] { background: #fbe8e5; color: #7f322d; }
+
+dl {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem 2rem;
+}
+
+dt { font-size: .9rem; }
