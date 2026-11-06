@@ -16,4 +16,4 @@ COPY public ./public
 COPY --chown=node:node data ./data
 USER node
 EXPOSE 3000
-CMD ["npm", "start"]
+CMD ["node", "dist/server.js"]
