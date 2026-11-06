@@ -1,0 +1,14 @@
+{
+  "users": [
+    { "id": 1, "name": "Alice Martin", "username": "alice", "email": "alice@example.test" },
+    { "id": 2, "name": "Samir Petit", "username": "samir", "email": "samir@example.test" }
+  ],
+  "products": [
+    { "id": 1, "name": "Carnet", "stock": 12 },
+    { "id": 2, "name": "Mug", "stock": 8 },
+    { "id": 3, "name": "Tote bag", "stock": 6 }
+  ],
+  "orders": [],
+  "deliveryDeadlines": {},
+  "events": []
+}
