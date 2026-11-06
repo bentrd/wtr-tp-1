@@ -1,0 +1,10 @@
+services:
+  boutique:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - boutique-data:/app/data
+
+volumes:
+  boutique-data:
